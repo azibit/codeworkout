@@ -14,6 +14,14 @@ if (!hasProperty('mainClass')) {
     ext.mainClass = ''
 }
 
+sourceSets {
+    test {
+        java {
+            srcDirs = ["test"]  // Note @Peter's comment below
+        }
+    }
+}
+
 repositories {
     mavenCentral()
     // You may define additional repositories, or even remove "mavenCentral()".
